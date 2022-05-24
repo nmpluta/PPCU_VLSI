@@ -1,0 +1,14 @@
+.simvision/
+waves.shm/
+xcelium.d/
+xrun.history
+xrun.key
+xrun.log*
+simvision*.diag
+*.svcf
+/led_waves.txt
+/dump_memory_*
+/seed.*
+simcompare.log
+*.swp
+TS1N40LPB4096X32M4M_initial.cde

@@ -1,0 +1,16 @@
+Recommended simulation strategy:
+
+1. Simulations without timing checks and with debug (for simulation debug, the
+fastest):
+
+./run_post -m ASIC -n -d 
+
+2. Simulations with timing checks (for implementation verfication) for minimum
+and maximum delays
+
+./run_post -m ASIC -y MAX
+./run_post -m ASIC -y MIN
+
+3. Simulations without timing checks and with TCF dump (very slow).
+
+./run_post -m ASIC -n -t

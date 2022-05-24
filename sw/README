@@ -1,0 +1,5 @@
+# initialize the build into the 'build' directory
+cmake -H. -Bbuild
+
+# compile 
+cmake --build build

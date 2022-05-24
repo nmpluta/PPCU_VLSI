@@ -1,0 +1,12 @@
+led_waves.txt
+mtm_riscv_chip.sdfcmd
+mtm_riscv_chip.sdf.gz.X
+mtm_riscv_chip_sdf.log
+mtm_riscv_chip.tcf
+seed.failed.ASIC
+seed.passed.ASIC
+seed.xrun.errors.ASIC
+TS1N40LPB4096X32M4M_initial.cde
+/dump_memory*
+/mtm_riscv_chip.tcf.gz
+/xrun.log.*
