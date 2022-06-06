@@ -30,7 +30,7 @@ int main()
 
             if (i < length_sos)
             {
-                gpio.set_pin(sos_morse[i], 1);
+                gpio.set_pin(1, sos_morse[i]);
             }
             else
             {
@@ -39,7 +39,7 @@ int main()
 
             if (i < length_name)
             {
-                gpio.set_pin(name_morse[i], 2);
+                gpio.set_pin(2, name_morse[i]);
             }
             else
             {
@@ -48,7 +48,7 @@ int main()
 
             if (i < length_surname)
             {
-                gpio.set_pin(surname_morse[i], 3);
+                gpio.set_pin(3, surname_morse[i]);
             }
             else
             {
