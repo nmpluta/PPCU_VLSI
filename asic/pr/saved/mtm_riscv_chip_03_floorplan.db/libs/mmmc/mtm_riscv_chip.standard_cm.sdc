@@ -1,0 +1,1 @@
+/home/student/npluta/PPCU_VLSI_projekt/mtm_ppcu_vlsi_riscv/asic/synth/results/mtm_riscv_chip.standard_cm.sdc

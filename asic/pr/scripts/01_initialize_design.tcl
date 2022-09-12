@@ -19,6 +19,7 @@ set_db init_ground_nets {VSS}
 # TODO: link the synthesis RESULT directory locally with the same name, e.g.:
 # ln -s ../synth/RESULTS .
 
+exec ln -sf results ../synth/results
 source ./results/${DESIGN}.invs_setup.tcl
 
 # add corner cells to the floorplan

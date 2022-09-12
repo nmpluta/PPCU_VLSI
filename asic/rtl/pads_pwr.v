@@ -13,12 +13,17 @@ module pads_pwr ( );
 //-- pad instances are note connected
 
 //------------------------------------------------------------------------------
-// Three power cell PVDD2DGZ and four ground cell PVSS3DGZ for I/O cells added
+// Three power cell PVDD2DGZ and four ground cell PVSS3DGZ for I/O cells added.
+// Three additional power pads added to get number of every pads divisible by 4.
 //------------------------------------------------------------------------------
 
 // core vdd
 PVDD1DGZ VDD1_1_ ( .VDD() );
 PVDD1DGZ VDD1_0_ ( .VDD() );
+
+// additional power pads - vdd
+PVDD2DGZ VDD2_4_ ( .VDDPST() );
+PVDD2DGZ VDD2_3_ ( .VDDPST() );
     
 // io vdd
 PVDD2DGZ VDD2_2_ ( .VDDPST() );
@@ -27,6 +32,9 @@ PVDD2DGZ VDD2_0_ ( .VDDPST() );
     
 // io power on control (only one)
 PVDD2POC VDD2POC ( .VDDPST() );
+
+// additional power pad - ground
+PVSS3DGZ VSS3_6_ ( .VSS() );
 
 // io ground
 PVSS3DGZ VSS3_5_ ( .VSS() );
