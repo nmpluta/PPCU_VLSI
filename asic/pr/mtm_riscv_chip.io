@@ -16,7 +16,7 @@
     )
     (top
 	(inst  name="u_pads_in/u_btn_0_"	            place_status=placed offset = 190)
-	(inst  name="u_pads_in/u_btn_1_"	            place_status=placed space = 84.28857143)
+	(inst  name="u_pads_in/u_btn_1_"	            place_status=placed space = 84.28)
 	(inst  name="u_pads_in/u_btn_2_"	            place_status=placed )
 	(inst  name="u_pads_in/u_btn_3_"	            place_status=placed )
  	(inst  name="u_pads_pwr/VDD2POC"	            place_status=placed )
@@ -29,7 +29,7 @@
     )
     (left
 	(inst  name="u_pads_out/u_boot_sequence_done"	place_status=placed offset = 190)
-	(inst  name="u_pads_pwr/VDD2_3_"	            place_status=placed space = 84.28857143)
+	(inst  name="u_pads_pwr/VDD2_3_"	            place_status=placed space = 84.28)
 	(inst  name="u_pads_pwr/VDD2_2_"	            place_status=placed )
 	(inst  name="u_pads_pwr/VDD2_1_"	            place_status=placed )
 	(inst  name="u_pads_pwr/VDD2_0_"	            place_status=placed )
@@ -42,7 +42,7 @@
     )
     (bottom
  	(inst  name="u_pads_out/u_led_0_"	            place_status=placed offset = 190)
-	(inst  name="u_pads_out/u_led_1_"	            place_status=placed space = 84.28857143)
+	(inst  name="u_pads_out/u_led_1_"	            place_status=placed space = 84.28)
  	(inst  name="u_pads_pwr/VSS3_3_"	            place_status=placed )
 	(inst  name="u_pads_pwr/VSS3_2_"	            place_status=placed )
 	(inst  name="u_pads_pwr/VSS3_1_"	            place_status=placed )
@@ -55,7 +55,7 @@
     )
     (right
 	(inst  name="u_pads_in/u_spi_miso"	            place_status=placed offset = 190)
-	(inst  name="u_pads_out/u_spi_mosi"	            place_status=placed space = 84.28857143)
+	(inst  name="u_pads_out/u_spi_mosi"	            place_status=placed space = 84.28)
 	(inst  name="u_pads_out/u_spi_sck"	            place_status=placed )
 	(inst  name="u_pads_out/u_spi_ss"	            place_status=placed )
 	(inst  name="u_pads_pwr/VSS3_6_"	            place_status=placed )
