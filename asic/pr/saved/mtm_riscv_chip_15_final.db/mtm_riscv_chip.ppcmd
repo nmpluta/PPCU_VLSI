@@ -1,0 +1,1188 @@
+# PPCMD 1 
+# sroute -connect corePin -layerChangeRange { M1(1) AP(9) } -blockPinTarget nearestTarget -corePinTarget firstAfterRowEnd -allowJogging 1 -crossoverViaLayerRange { M1(1) AP(9) } -allowLayerChange 0 -targetViaLayerRange { M1(1) AP(9) }
+# 81 
+# 16 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 1 
+
+# PPCMD 2 
+# sroute -connect blockPin -layerChangeRange { M1(1) AP(9) } -blockPinTarget nearestTarget -allowJogging 1 -crossoverViaLayerRange { M1(1) AP(9) } -allowLayerChange 0 -blockPin all -targetViaLayerRange { M1(1) AP(9) }
+# 80 
+# 16 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 2 
+
+# PPCMD 3 
+# sroute -connect padPin -layerChangeRange { M1(1) AP(9) } -blockPinTarget nearestTarget -padPinPortConnect {allPort allGeom} -padPinTarget nearestTarget -allowJogging 1 -crossoverViaLayerRange { M1(1) AP(9) } -allowLayerChange 0 -targetViaLayerRange { M1(1) AP(9) }
+# 79 
+# 16 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 3 
+
+# PPCMD 4 
+# addStripe -nets {VDD VSS} -layer M7 -direction horizontal -width 3 -spacing 5 -set_to_set_distance 100 -start_from bottom -start_offset 60 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit AP -padcore_ring_bottom_layer_limit M1 -block_ring_top_layer_limit AP -block_ring_bottom_layer_limit M1 -use_wire_group 0 -snap_wire_center_to_grid None -stacked_via_bottom_layer M1 -stacked_via_top_layer AP -via_using_exact_crossover_size false -orthogonal_only false
+# 78 
+# 2 
+# 1 
+# 0 
+# 0 
+# 5 
+# BOX_LIST 
+# 1573920 801680 1839920 1837400 0 
+# 1163440 801680 1256960 1837400 0 
+# 579920 1837400 1839920 1839920 0 
+# 579920 801680 846200 1837400 0 
+# 579920 579920 1839920 801680 0 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# VSS 6000 7 0 715920 1840120 200000 0 0 
+# VDD 6000 7 0 699920 1840120 200000 0 0 
+# END_NET_INFO_LIST 
+# END_PPCMD 4 
+
+# PPCMD 5 
+# setAddStripeMode -skip_via_on_wire_shape noshape
+# 77 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 5 
+
+# PPCMD 6 
+# setAddStripeMode -skip_via_on_pin standardcell
+# 76 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 6 
+
+# PPCMD 7 
+# setAddStripeMode -allow_jog {padcore_ring block_ring}
+# 75 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 7 
+
+# PPCMD 8 
+# setAddStripeMode -orthogonal_only false
+# 74 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 8 
+
+# PPCMD 9 
+# setAddStripeMode -split_vias false
+# 73 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 9 
+
+# PPCMD 10 
+# setAddStripeMode -via_using_exact_crossover_size false
+# 72 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 10 
+
+# PPCMD 11 
+# setAddStripeMode -stacked_via_bottom_layer M1
+# 71 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 11 
+
+# PPCMD 12 
+# setAddStripeMode -stacked_via_top_layer AP
+# 70 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 12 
+
+# PPCMD 13 
+# setAddStripeMode -stripe_min_length stripe_width
+# 69 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 13 
+
+# PPCMD 14 
+# setAddStripeMode -spacing_from_block 0.0
+# 68 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 14 
+
+# PPCMD 15 
+# setAddStripeMode -spacing_type edge_to_edge
+# 67 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 15 
+
+# PPCMD 16 
+# setAddStripeMode -trim_antenna_back_to_shape none
+# 66 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 16 
+
+# PPCMD 17 
+# setAddStripeMode -ignore_nondefault_domains false
+# 65 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 17 
+
+# PPCMD 18 
+# setAddStripeMode -partial_set_thru_domain false
+# 64 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 18 
+
+# PPCMD 19 
+# setAddStripeMode -stop_at_last_wire_for_area false
+# 63 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 19 
+
+# PPCMD 20 
+# setAddStripeMode -extend_to_closest_target ring
+# 62 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 20 
+
+# PPCMD 21 
+# setAddStripeMode -rows_without_stripes_only false
+# 61 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 21 
+
+# PPCMD 22 
+# setAddStripeMode -route_over_rows_only true
+# 60 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 22 
+
+# PPCMD 23 
+# setAddStripeMode -break_at block_ring
+# 59 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 23 
+
+# PPCMD 24 
+# setAddStripeMode -ignore_block_check true
+# 58 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 24 
+
+# PPCMD 25 
+# addStripe -nets {VDD VSS} -layer M6 -direction vertical -width 3 -spacing 5 -set_to_set_distance 100 -start_from left -start_offset 60 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit AP -padcore_ring_bottom_layer_limit M1 -block_ring_top_layer_limit AP -block_ring_bottom_layer_limit M1 -use_wire_group 0 -snap_wire_center_to_grid None -stacked_via_bottom_layer M1 -stacked_via_top_layer AP -via_using_exact_crossover_size false -orthogonal_only false
+# 57 
+# 2 
+# 1 
+# 0 
+# 0 
+# 5 
+# BOX_LIST 
+# 1573920 801680 1839920 1837400 0 
+# 1163440 801680 1256960 1837400 0 
+# 579920 1837400 1839920 1839920 0 
+# 579920 801680 846200 1837400 0 
+# 579920 579920 1839920 801680 0 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# VSS 6000 6 0 715920 1840120 200000 0 0 
+# VDD 6000 6 0 699920 1840120 200000 0 0 
+# END_NET_INFO_LIST 
+# END_PPCMD 25 
+
+# PPCMD 26 
+# setAddStripeMode -skip_via_on_wire_shape noshape
+# 56 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 26 
+
+# PPCMD 27 
+# setAddStripeMode -skip_via_on_pin standardcell
+# 55 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 27 
+
+# PPCMD 28 
+# setAddStripeMode -allow_jog {padcore_ring block_ring}
+# 54 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 28 
+
+# PPCMD 29 
+# setAddStripeMode -orthogonal_only false
+# 53 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 29 
+
+# PPCMD 30 
+# setAddStripeMode -split_vias false
+# 52 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 30 
+
+# PPCMD 31 
+# setAddStripeMode -via_using_exact_crossover_size false
+# 51 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 31 
+
+# PPCMD 32 
+# setAddStripeMode -stacked_via_bottom_layer M1
+# 50 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 32 
+
+# PPCMD 33 
+# setAddStripeMode -stacked_via_top_layer AP
+# 49 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 33 
+
+# PPCMD 34 
+# setAddStripeMode -stripe_min_length stripe_width
+# 48 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 34 
+
+# PPCMD 35 
+# setAddStripeMode -spacing_from_block 0.0
+# 47 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 35 
+
+# PPCMD 36 
+# setAddStripeMode -spacing_type edge_to_edge
+# 46 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 36 
+
+# PPCMD 37 
+# setAddStripeMode -trim_antenna_back_to_shape none
+# 45 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 37 
+
+# PPCMD 38 
+# setAddStripeMode -ignore_nondefault_domains false
+# 44 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 38 
+
+# PPCMD 39 
+# setAddStripeMode -partial_set_thru_domain false
+# 43 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 39 
+
+# PPCMD 40 
+# setAddStripeMode -stop_at_last_wire_for_area false
+# 42 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 40 
+
+# PPCMD 41 
+# setAddStripeMode -extend_to_closest_target ring
+# 41 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 41 
+
+# PPCMD 42 
+# setAddStripeMode -rows_without_stripes_only false
+# 40 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 42 
+
+# PPCMD 43 
+# setAddStripeMode -route_over_rows_only true
+# 39 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 43 
+
+# PPCMD 44 
+# setAddStripeMode -break_at block_ring
+# 38 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 44 
+
+# PPCMD 45 
+# setAddStripeMode -ignore_block_check true
+# 37 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 45 
+
+# PPCMD 46 
+# addRing -nets {VDD VSS} -type block_rings -around each_block -layer {top M7 bottom M7 left M6 right M6} -width {top 4.5 bottom 4.5 left 4.5 right 4.5} -spacing {top 1.5 bottom 1.5 left 1.5 right 1.5} -offset {top 1.5 bottom 1.5 left 1.5 right 1.5} -center 0 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+# 36 
+# 8 
+# 1 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# VSS 9000 7 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 1004805 807420 1415485 807420 1004805 1831410 1415485 1831410 
+# END_RING_PT_INFO_LIST 
+# VSS 9000 6 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 850870 1319415 1158740 1319415 1261550 1319415 1569420 1319415 
+# END_RING_PT_INFO_LIST 
+# VDD 9000 7 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 1004805 819420 1415485 819420 1004805 1819410 1415485 1819410 
+# END_RING_PT_INFO_LIST 
+# VDD 9000 6 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 862870 1319415 1146740 1319415 1273550 1319415 1557420 1319415 
+# END_RING_PT_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 46 
+
+# PPCMD 47 
+# setAddRingMode -skip_via_on_wire_shape noshape
+# 35 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 47 
+
+# PPCMD 48 
+# setAddRingMode -skip_via_on_pin standardcell
+# 34 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 48 
+
+# PPCMD 49 
+# setAddRingMode -orthogonal_only true
+# 33 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 49 
+
+# PPCMD 50 
+# setAddRingMode -via_using_exact_crossover_size true
+# 32 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 50 
+
+# PPCMD 51 
+# setAddRingMode -stacked_via_bottom_layer M1
+# 31 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 51 
+
+# PPCMD 52 
+# setAddRingMode -stacked_via_top_layer AP
+# 30 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 52 
+
+# PPCMD 53 
+# setAddRingMode -skip_crossing_trunks none
+# 29 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 53 
+
+# PPCMD 54 
+# setAddRingMode -avoid_short false
+# 28 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 54 
+
+# PPCMD 55 
+# setAddRingMode -ignore_rows false
+# 27 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 55 
+
+# PPCMD 56 
+# setAddRingMode -extend_over_row false
+# 26 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 56 
+
+# PPCMD 57 
+# setAddRingMode -ring_target default
+# 25 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 57 
+
+# PPCMD 58 
+# addRing -nets {VDD VSS} -type core_rings -follow core -layer {top M7 bottom M7 left M8 right M8} -width {top 12 bottom 12 left 12 right 12} -spacing {top 2 bottom 2 left 2 right 2} -offset {top 10 bottom 10 left 10 right 10} -center 0 -skip_side {top bottom } -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None -use_wire_group 1 -use_wire_group_bits 3
+# 24 
+# 32 
+# 1 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# VSS 24000 8 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 407920 1209920 435920 1209920 463920 1209920 1955920 1209920 1983920 1209920 2011920 1209920 
+# END_RING_PT_INFO_LIST 
+# VDD 24000 8 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 491920 1209920 519920 1209920 547920 1209920 1871920 1209920 1899920 1209920 1927920 1209920 
+# END_RING_PT_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 58 
+
+# PPCMD 59 
+# setAddRingMode -skip_via_on_wire_shape noshape
+# 23 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 59 
+
+# PPCMD 60 
+# setAddRingMode -skip_via_on_pin standardcell
+# 22 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 60 
+
+# PPCMD 61 
+# setAddRingMode -orthogonal_only true
+# 21 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 61 
+
+# PPCMD 62 
+# setAddRingMode -via_using_exact_crossover_size true
+# 20 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 62 
+
+# PPCMD 63 
+# setAddRingMode -stacked_via_bottom_layer M1
+# 19 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 63 
+
+# PPCMD 64 
+# setAddRingMode -stacked_via_top_layer AP
+# 18 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 64 
+
+# PPCMD 65 
+# setAddRingMode -skip_crossing_trunks none
+# 17 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 65 
+
+# PPCMD 66 
+# setAddRingMode -avoid_short false
+# 16 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 66 
+
+# PPCMD 67 
+# setAddRingMode -ignore_rows false
+# 15 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 67 
+
+# PPCMD 68 
+# setAddRingMode -extend_over_row false
+# 14 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 68 
+
+# PPCMD 69 
+# setAddRingMode -ring_target default
+# 13 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 69 
+
+# PPCMD 70 
+# addRing -nets {VDD VSS} -type core_rings -follow core -layer {top M7 bottom M7 left M6 right M6} -width {top 12 bottom 12 left 4.5 right 4.5} -spacing {top 2 bottom 2 left 10 right 10} -offset {top 10 bottom 10 left 15 right 15} -center 0 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None -use_wire_group 1 -use_wire_group_bits 3
+# 12 
+# 32 
+# 1 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# VSS 24000 7 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 1209920 407920 1209920 435920 1209920 463920 1209920 1955920 1209920 1983920 1209920 2011920 
+# END_RING_PT_INFO_LIST 
+# VSS 9000 6 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 400420 1209920 429420 1209920 458420 1209920 1961420 1209920 1990420 1209920 2019420 1209920 
+# END_RING_PT_INFO_LIST 
+# VDD 24000 7 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 1209920 491920 1209920 519920 1209920 547920 1209920 1871920 1209920 1899920 1209920 1927920 
+# END_RING_PT_INFO_LIST 
+# VDD 9000 6 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 487420 1209920 516420 1209920 545420 1209920 1874420 1209920 1903420 1209920 1932420 1209920 
+# END_RING_PT_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 70 
+
+# PPCMD 71 
+# setAddRingMode -skip_via_on_wire_shape noshape
+# 11 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 71 
+
+# PPCMD 72 
+# setAddRingMode -skip_via_on_pin standardcell
+# 10 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 72 
+
+# PPCMD 73 
+# setAddRingMode -orthogonal_only true
+# 9 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 73 
+
+# PPCMD 74 
+# setAddRingMode -via_using_exact_crossover_size true
+# 8 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 74 
+
+# PPCMD 75 
+# setAddRingMode -stacked_via_bottom_layer M1
+# 7 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 75 
+
+# PPCMD 76 
+# setAddRingMode -stacked_via_top_layer AP
+# 6 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 76 
+
+# PPCMD 77 
+# setAddRingMode -skip_crossing_trunks none
+# 5 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 77 
+
+# PPCMD 78 
+# setAddRingMode -avoid_short false
+# 4 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 78 
+
+# PPCMD 79 
+# setAddRingMode -ignore_rows false
+# 3 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 79 
+
+# PPCMD 80 
+# setAddRingMode -extend_over_row false
+# 2 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 80 
+
+# PPCMD 81 
+# setAddRingMode -ring_target default
+# 1 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 81 
+
