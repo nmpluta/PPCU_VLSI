@@ -1,0 +1,120 @@
+*----------------------------------------------------------------------------------------
+*	Innovus 19.13-s080_1 (64bit) 01/24/2020 18:10 (Linux 2.6.32-431.11.2.el6.x86_64)
+*	
+*
+* 	Date & Time:	2022-Sep-13 19:00:27 (2022-Sep-13 17:00:27 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: mtm_riscv_chip
+*
+*	Liberty Libraries used: 
+*	        /cad/dk/PDK_CRN45GS_DGO_11_25/digital/Front_End/timing_power_noise/NLDM/tpfn40lpgv2od3_120a/tpfn40lpgv2od3lt1.lib
+*	        /cad/dk/PDK_CRN45GS_DGO_11_25/IMEC_RAM_generator/ram/ts1n40lpb4096x32m4m_250a/NLDM/ts1n40lpb4096x32m4m_250a_ff1p21vm40c.lib
+*	        /cad/dk/PDK_CRN45GS_DGO_11_25/digital/Front_End/timing_power_noise/NLDM/tcbn40lpbwp_200a/tcbn40lpbwplt.lib
+*	        /cad/dk/PDK_CRN45GS_DGO_11_25/digital/Front_End/timing_power_noise/NLDM/tpfn40lpgv2od3_120a/tpfn40lpgv2od3ml1.lib
+*	        /cad/dk/PDK_CRN45GS_DGO_11_25/IMEC_RAM_generator/ram/ts1n40lpb4096x32m4m_250a/NLDM/ts1n40lpb4096x32m4m_250a_ff1p21v125c.lib
+*	        /cad/dk/PDK_CRN45GS_DGO_11_25/digital/Front_End/timing_power_noise/NLDM/tcbn40lpbwp_200a/tcbn40lpbwpml.lib
+*	        /cad/dk/PDK_CRN45GS_DGO_11_25/digital/Front_End/timing_power_noise/NLDM/tpfn40lpgv2od3_120a/tpfn40lpgv2od3wcz1.lib
+*	        /cad/dk/PDK_CRN45GS_DGO_11_25/IMEC_RAM_generator/ram/ts1n40lpb4096x32m4m_250a/NLDM/ts1n40lpb4096x32m4m_250a_ss0p99v0c.lib
+*	        /cad/dk/PDK_CRN45GS_DGO_11_25/digital/Front_End/timing_power_noise/NLDM/tcbn40lpbwp_200a/tcbn40lpbwpwcz.lib
+*	        /cad/dk/PDK_CRN45GS_DGO_11_25/digital/Front_End/timing_power_noise/NLDM/tpfn40lpgv2od3_120a/tpfn40lpgv2od3wcl1.lib
+*	        /cad/dk/PDK_CRN45GS_DGO_11_25/IMEC_RAM_generator/ram/ts1n40lpb4096x32m4m_250a/NLDM/ts1n40lpb4096x32m4m_250a_ss0p99vm40c.lib
+*	        /cad/dk/PDK_CRN45GS_DGO_11_25/digital/Front_End/timing_power_noise/NLDM/tcbn40lpbwp_200a/tcbn40lpbwpwcl.lib
+*	        /cad/dk/PDK_CRN45GS_DGO_11_25/digital/Front_End/timing_power_noise/NLDM/tpfn40lpgv2od3_120a/tpfn40lpgv2od3bc1.lib
+*	        /cad/dk/PDK_CRN45GS_DGO_11_25/IMEC_RAM_generator/ram/ts1n40lpb4096x32m4m_250a/NLDM/ts1n40lpb4096x32m4m_250a_ff1p21v0c.lib
+*	        /cad/dk/PDK_CRN45GS_DGO_11_25/digital/Front_End/timing_power_noise/NLDM/tcbn40lpbwp_200a/tcbn40lpbwpbc.lib
+*	        /cad/dk/PDK_CRN45GS_DGO_11_25/digital/Front_End/timing_power_noise/NLDM/tpfn40lpgv2od3_120a/tpfn40lpgv2od3wc1.lib
+*	        /cad/dk/PDK_CRN45GS_DGO_11_25/IMEC_RAM_generator/ram/ts1n40lpb4096x32m4m_250a/NLDM/ts1n40lpb4096x32m4m_250a_ss0p99v125c.lib
+*	        /cad/dk/PDK_CRN45GS_DGO_11_25/digital/Front_End/timing_power_noise/NLDM/tcbn40lpbwp_200a/tcbn40lpbwpwc.lib
+*
+*	Power Domain used: 
+*              Rail:        VDD      Voltage:       1.21 
+*
+*       Dynamic View: BC_av
+*
+*       Leakage View: BC_av
+*
+*       User-Defined Activity : N.A.
+*
+*	Switching Activity File used: 
+*	        ../sim_post/mtm_riscv_chip.tcf.gz
+*                    Design annotation coverage: 40130/40130 = 100% 
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: N.A.
+*
+*       Primary Input Activity: N.A.
+*
+*       Default icg ratio: N.A.
+*
+*       Global Comb ClockGate Ratio: N.A.
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs 
+*
+*       report_power -output reports -report_prefix pwr -format simple
+*
+-----------------------------------------------------------------------------------------
+
+
+Total Power 
+-----------------------------------------------------------------------------------------
+Total Internal Power:        5.57974153 	   75.1267%
+Total Switching Power:       1.73634437 	   23.3785%
+Total Leakage Power:         0.11102273 	    1.4948%
+Total Power:                 7.42710863 
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                         3.784     0.01291     0.02891       3.826       51.51 
+Macro                             0.2775     0.01475     0.05949      0.3517       4.735 
+IO                                 1.037      0.1644   0.0002001       1.202       16.18 
+Physical-Only                          0           0    0.004895    0.004895      0.0659 
+Combinational                     0.2774      0.6127     0.01709      0.9072       12.21 
+Clock (Combinational)             0.2037      0.9316   0.0004289       1.136       15.29 
+Clock (Sequential)                     0           0           0           0           0 
+-----------------------------------------------------------------------------------------
+Total                               5.58       1.736       0.111       7.427         100 
+-----------------------------------------------------------------------------------------
+
+
+Clock                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Tclk                               1.075      0.9362   0.0004409       2.011       27.08 
+-----------------------------------------------------------------------------------------
+Total (excluding duplicates)       1.075      0.9362   0.0004409       2.011       27.08 
+-----------------------------------------------------------------------------------------
+Clock: Tclk
+Clock Period: 0.020000 usec 
+Clock Toggle Rate:   100.0000 Mhz 
+Clock Static Probability:  0.5000
+
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Default                  1.21      1.037      0.1644    0.004608       1.206       16.24 
+VDD                      1.21      4.542       1.572      0.1064       6.221       83.76 
+
+
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+*                Highest Average Power:           u_pads_in/u_clk (PDISDGZ):           0.8757 
+*                Highest Leakage Power: u_mtm_riscv_soc_wrapper/u_mtm_riscv_soc/u_peripherals/u_code_ram_u_ram/u_TS1N40LPB4096X32M4M (TS1N40LPB4096X32M4M):          0.02745 
+*          Total Cap:      5.45935e-10 F
+*          Total instances in design: 75070
+*          Total instances in design with no power:     0
+*          Total instances in design with no activity:     0
+*          Total Fillers and Decap: 35525
+-----------------------------------------------------------------------------------------
+
